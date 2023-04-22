@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import { Outlet, Link } from "react-router-dom";
+//import { Outlet, Link } from "react-router-dom";
+
+
 function ArtistCard ({age, img, name, id}){
    
-
- 
     return (
-        <Link to={`artist/${id}`}>
+     //   <Link to={`artist/${id}`}>
         <div className="ArtistCard">
         <div className='ArtistNameContainer'>{name}</div>
         <div className='ArtistAgeContainer'>{age}</div>
         <img src={img}/>
         </div>
-        </Link>
+     //   </Link>
     )
     }
             

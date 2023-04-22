@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       {
-        artists?.map((artist) => {
+        artists.map((artist) => {
           console.log(artist)
           return <ArtistCard key={artist.id} {...artist} />
         })

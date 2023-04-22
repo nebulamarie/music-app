@@ -6,22 +6,23 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import Artist from "./routes/Artist";
+//import Artist from "./routes/Artist";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App/>,
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <App/>,
     
-  },
-  {
-    path:"artist/:artistId",
-    element: <Artist/>
-  }
-]);
+//   },
+//   // {
+//   //   path:"artist/:artistId",
+//   //   element: <Artist/>
+//   // }
+// ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    {/* <RouterProvider router={router} /> */}
+  <App />
   </React.StrictMode>
 );
